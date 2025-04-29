@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>TANKING</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<!--<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">  -->
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+
+	<link rel="stylesheet" href="../css/styles.css">
+	<!-- <link href="https://file.myfontastic.com/Bub2w2r5nVpvJUGzVsnCkT/icons.css" rel="stylesheet"> -->
+
+	  
+
+</head>
+<body>
+
+	<!-- NAVIGATION -->
+	<!--<header>
+	    <div class="collapse bg-dark" id="navbarHeader">
+		    <div class="container">
+		        <div class="row">
+			        <div class="col-sm-8 col-md-7 py-4">
+			          <h4 class="text-white">Acerca de nosotros</h4>
+			          <p class="text-muted">Somos una empresa mexicana dedicada a la venta de vinos y licores a los mejores precios.
+			              Ventas al mayoreo a partir de la cuarta botella y al menudeo, con los mejores descuentos y promociones.</p>
+			        </div>
+			        <div class="col-sm-4 offset-md-1 py-4">
+			          <h4 class="text-white">Síguenos en</h4>
+			          <ul class="list-unstyled">
+			            <li><a href="#" class="text-white">Twitter</a></li>
+			            <li><a href="https://www.facebook.com/tanking.mx/" target="_blank" class="text-white">Facebook</a></li>
+			            <li><a href="#contact" class="text-white">Correo</a></li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="navbar navbar-dark bg-dark shadow-sm">
+			    <div class="container d-flex justify-content-between">
+			      <a href="#" class="navbar-brand d-flex align-items-center">
+			        <img class="d-block mr-3 rounded-circle" src="../img/tanking-logo.jpeg" alt="" width="40" height="40">
+			        TANKING
+			      </a>
+			      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="navbar-toggler-icon"></span>
+		        </button>
+		    </div>
+	    </div>
+	</header>-->
+
+	<main role="main">
+		<section class="jumbotron text-center">
+		    <div class="container">
+			    <h5>Dmobot</h5>
+			</div>
+		</section>
+	</main>  
+		    
+			
+	<iframe
+		allow="microphone;"
+		width="350"
+		height="430"
+		src="https://console.dialogflow.com/api-client/demo/embedded/ff547ca8-7380-45cc-88ca-2463acf33801">
+	</iframe>
+
+
+	
+	
+	
+
+	<footer>
+		<div class="container bg-dark p-3 text-white text-center">
+			<p>Design Studio &copy: 2025</p>
+		</div>
+	</footer>
+
+	<!-- BOOTSTRAP JAVA SCRIPT -->
+	<!-- <script src="../js/bootstrap.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- <script src="../js/jquery.js"></script> -->
+
+	<!-- FUNCION DE SEPARAR LETRAS -->
+	<script>
+		let letras = document.getElementById('om').innerText.split('');
+		//var letras = document.getElementById('om').innerText.split('');
+    	//var lista = letras.join(', ');
+		//let sequence = lista;
+   		//document.getElementById("palabra").innerHTML = sequence;
+
+		$(document).on('click','#massmodal', function() {
+
+			for (var i = 0; i < letras.length; i++) {
+				//console.log(sequence[i]);
+				$(palabra).append("<div id='e"+[i]+"' class='d-inline-block mx-1' style='width: 40px; height: 40px; background-color: #eee;''></div>");
+				$(carousel).append("<button id='b"+[i]+"' class='btn btn-outline-primary mx-1'>"+letras[i]+"</button>");
+				//<button id="o1" class="btn btn-outline-primary">O</button>
+				//$(carousel).append(sequence[i]);
+
+			}
+
+		});
+
+	</script>
+
+	<!-- FUNCION DE BOTONES -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		var letra = 0
+		
+		$(document).on('click','#b0', function() {
+				//var letra = document.getElementById('b1')
+				//var letra = 0
+				//$(palabra).append("<button id='o' class='btn btn-outline-primary'>O</button>");
+				$(e0).replaceWith("<button id='b1' class='btn btn-outline-primary mx-1'>"+letra+"</button>");
+				$(b0).remove();
+		});
+
+		$(document).on('click','#nuevomodal', function() {		
+					$(actions).append("<button id='massmodal'>Añadir</button>");
+					$(nuevomodal).remove();
+		});
+	</script>
+</body>
+</html>
